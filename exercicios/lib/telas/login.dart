@@ -41,18 +41,24 @@ class Dra extends StatelessWidget {
             children: [
               Container(
                 width: MediaQuery.of(context).size.width - 0,
-                color: Colors.red,
-                height: 150,
+                height: 180,
+                decoration: BoxDecoration(
+                  image: DecorationImage(image: AssetImage("imgs/bma2.png" ),
+                  fit: BoxFit.cover,
+                  
+                  )
+                ),
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 8),
                       child: Row(
                         children: [
-                          Icon(
-                            Icons.person,
-                            size: 60,
-                          ),
+                          ClipOval(
+                            child: Image.asset("imgs/Eu.jpeg",
+                            height: 100,
+                            ),
+                          )
                         ],
                       ),
                     ),
@@ -81,12 +87,33 @@ class Dra extends StatelessWidget {
                     children: [
                       Icon(Icons.home),
                       SizedBox(width: 5),
-                      Text("Retroceder")
+                      Text("Retroceder"),
+                      
                     ],
                   ),
+
                 ),
-              )
+
+              ),
+              Row(
+                    children: [
+                      Icon(Icons.person_add),
+                      SizedBox(width: 30),
+                      Text("Dados "),
+                    ]
+              ),
+
+
+              Row(
+                    children: [
+                      Icon(Icons.play_arrow),
+                      SizedBox(width: 30),
+                      Text("Play"),
+                    ]
+              ),
             ],
+
+            
           ),
         ),
       ),

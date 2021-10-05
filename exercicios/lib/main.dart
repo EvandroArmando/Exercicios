@@ -1,5 +1,4 @@
 import 'package:exercicios/telas/Primeira.dart';
-import 'package:exercicios/telas/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
